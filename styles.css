@@ -28,3 +28,27 @@
   justify-content: space-evenly;
   background-color: brown;
 }
+.nav-logo{
+  width: 100%;
+}
+
+
+
+
+.user img {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+}
+
+
+.carrito img {
+  width: 40px;
+  height: 40px; 
+  border-radius: 50%;
+}
+.envio img {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+}
