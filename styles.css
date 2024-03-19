@@ -13,12 +13,17 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: cadetblue;
+  background-color: #F3F3F3;
   
 }
 
+.navegation a{
+  text-decoration: none;
+  color: black;
+}
+
 .logo-container {
-  background-color: blue;
+  background-color: #FFFF;
 }
 
 .nav-container {
@@ -61,24 +66,41 @@
 }
 
 .user img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 
 .carrito img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 .envio img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+}
+
+.moneda,
+.user,
+.envio,
+.carrito {
+  margin: 19px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
 }
 
 .imagesearch{
   background-color:rgb(223, 220, 220) ;
   border-radius: 5px;
   height: 40px;
+}
+
+.menu-desplegable{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
