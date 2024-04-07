@@ -126,3 +126,62 @@
   border-color: #ddd;
 }
 
+
+.linea-vertical {
+  
+height: 100%;
+width: 1px;
+background-color: black;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+
+}
+
+.ventaja1 {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+
+}
+
+.ventaja2 {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+
+}
+
+.titulo-ventaja1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.descripcion-ventaja1 {
+  font-style: arial;
+}
+
+.titulo-ventaja2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.descripcion-ventaja2 {
+  font-style: arial;
+}
+
+.contenedor-ventaja { 
+ float: right;
+ 
+}
+.gestion img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.deseos img {
+  width: 80px;
+  height: 80px;
+ 
+}
