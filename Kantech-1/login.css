@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, Ubuntu;
+    font-weight:200;
+}
+
+.contenedor-login{
+display: flex;
+height: 500px;
+width: 800px;
+margin: auto;
+margin-top: 50px;
+}
+.contenedor-informacion-ventajas{
+    display: flex;
+    flex-direction: column;
+    }
+.contenedor-informacion-ventajas img{
+    height: 50px;
+    width: 50px;
+}
+.divisor-elementos{
+    border-right: 2px solid gray;
+}
+.form h2{
+    font-weight: 500;
+
+}
+.form a{
+    display: flex;
+    align-self:baseline;
+    margin-left: 25px;
+    color: black;
+}
+.form h4{
+    margin-top: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: white;
+}
+.box{
+    padding: 12px;
+    width: 100%;
+    margin: 15px;
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 5px;
+    
+}
+.contenedor-sesion-opciones{
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    margin-left: 27%;
+    
+}
+#submit{
+    padding: 12px 30px;
+    width: 220px;
+    margin-top: 15px;
+    background-color: #81A4FE;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #81A4FE;
+    color: white;
+    
+}
+#accedergoogle{
+    padding: 12px 30px;
+    width: 100%;
+    margin-top: 15px;
+    background-color: white;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid gray;
+
+}
+.contenenedor-crear-cuenta{
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    margin-left: 27%;
+}
+#crearcuenta{
+    padding: 12px 30px;
+    width: 220px;
+    margin-top: 20px;
+    background-color: white;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid gray;
+
+
+}
+.contenedor-logo{
+    display: flex;
+    position: relative;
+    left: 600px;
+    width: 260px;
+    height: 100px;
+}
