@@ -15,17 +15,17 @@
         
     </header>
     <div class="contenedor-login">
-        <form action="" class="form">
+        <form action="" class="form" id="login-form">
             <h2>Iniciar Sesion</h2>
             <div class="contenedor-correo">
-            <input type="email" name="email" class="box" placeholder="Ingresa tu Correo">
+            <input type="email" name="email" id="email" class="box" placeholder="Ingresa tu Correo">
             </div>
             <div class="contenedor-contraseña">
-            <input type="password" name="password" class="box" placeholder="Ingresa tu contraseña" >
+            <input type="password" name="password" class="box" id="contrasena" placeholder="Ingresa tu contraseña" >
             <a href="#">He olvidado mi cuenta</a>
             </div>
            <div class="contenedor-sesion-opciones" >
-            <input type="submit" value="Iniciar Sesion" id="submit">
+           <button id="submit">Iniciar</button>
             <input type="submit" value="Acceder con google" id="accedergoogle">
            </div>
             <div class="contenenedor-crear-cuenta">
@@ -43,5 +43,6 @@
            </div>
         </div>
     </div>
+    <script src="scriptlogin.js"></script>
 </body>
 </html>
