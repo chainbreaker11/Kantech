@@ -1,169 +1,189 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: system-ui, -apple-system, Ubuntu;
-    font-weight:200;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contenedor-login{
-display: flex;
-height: 500px;
-width: 800px;
-margin: auto;
-margin-top: 50px;
+body {
+  font-family: system-ui, -apple-system, Ubuntu;
+  font-weight: 200;
 }
-.contenedor-informacion-ventajas{
-    display: flex;
-    flex-direction: column;
-    }
-.contenedor-informacion-ventajas img{
-    height: 50px;
-    width: 50px;
+
+.contenedor-login {
+  display: flex;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
 }
-.divisor-elementos{
-    border-right: 2px solid gray;
+
+.contenedor-informacion-ventajas {
+  display: flex;
+  flex-direction: column;
 }
-.form h2{
-    font-weight: 500;
+
+.contenedor-informacion-ventajas img {
+  height: 50px;
+  width: 50px;
+}
+
+.divisor-elementos {
+  border-right: 2px solid gray;
+}
+
+.form h2 {
+  font-weight: 500;
 
 }
-.form a{
-    display: flex;
-    align-self:baseline;
-    margin-left: 25px;
-    color: black;
-}
-.form h4{
-    margin-top: 20px;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-    background-color: white;
-}
-.box{
-    padding: 12px;
-    width: 100%;
-    margin: 15px;
-    border: 2px solid gray;
-    outline: none;
-    border-radius: 5px;
-    
-}
-.contenedor-sesion-opciones{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-left: 12%;
-    
-}
-#submit{
-    padding: 12px 30px;
-    width: 220px;
-    margin-top: 15px;
-    background-color: #81A4FE;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #81A4FE;
-    color: white;
-    
-}
-#accedergoogle{
-    padding: 12px 30px;
-    width: 100%;
-    margin-top: 15px;
-    background-color: white;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid gray;
 
+.form a {
+  display: flex;
+  align-self: baseline;
+  margin-left: 25px;
+  color: black;
+}
+
+.form h4 {
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  background-color: white;
+}
+
+.box {
+  padding: 12px;
+  width: 100%;
+  margin: 15px;
+  border: 2px solid gray;
+  outline: none;
+  border-radius: 5px;
 
 }
-.contenenedor-crear-cuenta{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-left: 12%;
+
+.contenedor-sesion-opciones {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 12%;
+
 }
-#crearcuenta{
-    padding: 12px 30px;
-    width: 220px;
-    margin-top: 20px;
-    background-color: white;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid gray;
+
+#submit {
+  padding: 12px 30px;
+  width: 220px;
+  margin-top: 15px;
+  background-color: #81A4FE;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #81A4FE;
+  color: white;
+
+}
+
+#accedergoogle {
+  padding: 12px 30px;
+  width: 100%;
+  margin-top: 15px;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid gray;
 
 
 }
-.contenedor-logo{
-    display: flex;
-    position: relative;
-    left: 600px;
-    width: 260px;
-    height: 100px;
+
+.contenenedor-crear-cuenta {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 12%;
 }
+
+#crearcuenta {
+  padding: 12px 30px;
+  width: 220px;
+  margin-top: 20px;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid gray;
+
+
+}
+
+.contenedor-logo {
+  display: flex;
+  position: relative;
+  left: 600px;
+  width: 260px;
+  height: 100px;
+
+
+}
+
 .ventaja1 {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border: none;
-   
-    padding-left: 300px;
-  
-  }
-  
-  .ventaja2 {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border: none;
-    padding-left: 300px;
-  }
-  
-  .titulo-ventaja1 {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  .descripcion-ventaja1 {
-    font-style: arial;
-    
-  }
-  
-  .titulo-ventaja2 {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  .descripcion-ventaja2 {
-    font-style: arial;
-  }
-  
-  .contenedor-ventaja { 
-   float: right;
-   
-  }
-  .gestion img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-  
-  .deseos img {
-    width: 80px;
-    height: 80px;
-  }
-  .linea-vertical {
-  
-    height: 100%;
-    width: 1px;
-    background-color: black;
-    position: absolute;
-    left: 50%;
-    transform: translateX(50%);
-    
-    }
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+
+  padding-left: 300px;
+
+}
+
+.ventaja2 {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+  padding-left: 300px;
+}
+
+.titulo-ventaja1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.descripcion-ventaja1 {
+  font-style: arial;
+
+}
+
+.titulo-ventaja2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.descripcion-ventaja2 {
+  font-style: arial;
+}
+
+.contenedor-ventaja {
+  float: right;
+
+}
+
+.gestion img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.deseos img {
+  width: 80px;
+  height: 80px;
+}
+
+.linea-vertical {
+
+  background-color: rgb(212, 212, 212);
+  width: 2px;
+  height: 500px;
+  margin: 0 10px;
+  margin-left: 150px;
+}
