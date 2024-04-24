@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <header class="login">
+        <div class="contenedor-logo">
+            <img class logo src="img\LOGOKARDEXPROTO.png" alt="Kantech">
+        </div>
+        
+    </header>
+    <div class="contenedor-login">
+        <form action="" class="form" id="login-form">
+            <h2>Registro</h2>
+            <div class="contenedor-nombre">
+                <input type="text" name="nombre" id="nombre" class="box" placeholder="Ingrese su nombre">
+            </div>
+                <div class="contenedor-correo">
+                <input type="email" name="email" id="email" class="box" placeholder="Ingresa tu Correo">
+            </div>
+            
+            <div class="contenedor-contraseña">
+                <input type="password" name="password" class="box" id="contrasena" placeholder="Ingresa tu contraseña" >                
+            </div>
+
+            <div class="contenedor-contraseña">
+                <input type="password" name="password" class="box" id="contrasena" placeholder="Repetir la contraseña" >                
+            </div>
+            
+            <div class="container-confirmacion">
+                <input type="checkbox" name="checkbox" id="confirmacion"> He leído y aceptado las <a href="#">Políticas de privacidad</a>
+            </div>
+
+           <div class="contenedor-sesion-opciones" >
+                <button id="submit">Registrarse</button>
+                <input type="submit" value="Acceder con google" id="accedergoogle">
+            </div>        
+
+            <div class="contenenedor-crear-cuenta">
+                <h4>¿Eres nuevo cliente?</h4>
+                <input type="submit" value="Crear Cuenta" id="crearcuenta">
+            </div>
+            
+        </form>
+        
+                <div class="linea-vertical"></div>    
+        
+        <div class="contenedor-ventaja">
+            <div class="ventaja1">
+                <div class="gestion"><img src="img/carro-de-reparto.png" alt="" /></div>
+                <div class="titulo-ventaja1">
+                    <h2>Gestionar tus pedidos</h2>
+                </div>
+                <div class="descripcion-ventaja1">
+                    <p>Ten el control de todos tus pedidos y recibe notificaciones con el seguimiento.</p>
+                </div>
+            </div>
+            <div class="ventaja2">
+                <div class="deseos"><img src="img/deseos.png" alt="" /></div>
+                <div class="titulo-ventaja2">
+                    <h2>Lista de deseos</h2>
+                </div>
+                <div class="descripcion-ventaja2">
+                    <p>Guarda tus productos favoritos en las listas de deseo para recibir notificaciones con ofertas.</p>
+                </div>
+            </div>
+        <script src="scriptlogin.js"></script>
+    </body>
+</html>
