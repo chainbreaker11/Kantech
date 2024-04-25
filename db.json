@@ -125,6 +125,73 @@
       "email": "p@g",
       "usuario": "p",
       "contrasena": "77"
+    },
+    {
+      "id": "460e",
+      "nombre": "jesus1",
+      "email": "p@g",
+      "password": "1"
+    },
+    {
+      "id": "60d3",
+      "nombre": "jesus Humberto Rico Mejia",
+      "email": "jesushumbertoricomejia1@gmail.com",
+      "password": "9811"
+    },
+    {
+      "id": "7fbd",
+      "nombre": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "831c",
+      "nombre": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "4832",
+      "nombre": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "88ed",
+      "nombre": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "0628",
+      "nombre": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "8e6f",
+      "nombre": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "cc59",
+      "nombre": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "1509",
+      "nombre": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "b3bd",
+      "nombre": "jesus",
+      "email": "p@g",
+      "password": "1",
+      "checkbox": "on"
     }
   ]
 }
