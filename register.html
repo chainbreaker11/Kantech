@@ -16,20 +16,23 @@
     </header>
     <div class="contenedor-login">
         <form action="" class="form" id="login-form">
-            <h2>Registro</h2>
+            <div class="registro"> <h2>Registro</h2></div>
+           
             <div class="contenedor-nombre">
-                <input type="text" name="nombre" id="nombre" class="box" placeholder="Ingrese su nombre">
+                <input type="text" name="nombre" id="nombre" class="input-nombre" placeholder="Ingresar Nombre" required>
+                <label for="nombre" class="placeholder-label">Nombre</label>
             </div>
                 <div class="contenedor-correo">
-                <input type="email" name="email" id="email" class="box" placeholder="Ingresa tu Correo">
+                    <input type="email" name="email" id="email" class="input-correo" placeholder="Ingresar E-mail" required>
+                    <label for="email" class="placeholder-label-correo">E-mail</label>
             </div>
             
             <div class="contenedor-contraseña">
-                <input type="password" name="password" class="box" id="contrasena" placeholder="Ingresa tu contraseña" >                
+                <input type="password" name="password" class="box" id="contrasena" placeholder="Contraseña"  required>                
             </div>
 
             <div class="contenedor-contraseña">
-                <input type="password" name="password" class="box" id="recontrasena" placeholder="Repetir la contraseña" >                
+                <input type="password" name="password" class="box" id="recontrasena" placeholder="Repetir contraseña" required>                
             </div>
             
             <div class="container-confirmacion">

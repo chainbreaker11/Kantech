@@ -187,3 +187,180 @@ body {
   margin: 0 10px;
   margin-left: 150px;
 }
+
+.registro {
+  margin: 30px;
+}
+
+input.box {
+  font-size: 16px;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  transition: .3s;
+}
+
+
+.contenedor-nombre,
+.contenedor-correo {
+    position: relative;
+    margin: 15px;
+    
+   
+}
+
+.input-nombre,
+.input-correo,
+.box {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s blue;
+}
+
+.placeholder-label,
+.placeholder-label-correo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: transparent;
+}
+
+.input-nombre:focus + .placeholder-label,
+.input-correo:focus + .placeholder-label-correo {
+    top: -15px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+}
+.input-nombre:focus + .placeholder-label,
+    .input-nombre:not(:placeholder-shown) + .placeholder-label {
+        top: -20px;
+        left: -10px;
+        font-size: 10px; 
+        color: black;
+        margin: 10px;
+    }
+
+    .input-correo:focus + .placeholder-label-correo,
+    .input-correo:not(:placeholder-shown) + .placeholder-label-correo {
+      top: -10px; 
+      left: -2px;
+      font-size: 10px; 
+      color: black; 
+        
+    }
+
+    .contenedor-input {
+      position: relative;
+      margin-bottom: 20px;
+  }
+  
+  .input-nombre {
+    border: 1px solid #ccc;
+    padding: 8px;
+    transition: border-color 0.3s ease; 
+}
+
+.input-nombre:focus {
+    border-color: dodgerblue; 
+}
+.input-nombre,
+.input-correo,
+.box {
+    border: 1px solid #ccc;
+    padding: 8px;
+    transition: border-color 0.3s ease; 
+}
+
+.input-borde-azul {
+    border-color: dodgerblue 
+}
+
+.box {
+  border: 1px solid #ccc;
+  padding: 8px;
+  transition: border-color 0.3s ease; /* Transición suave del color del borde */
+}
+
+.box:valid {
+  border-color: dodgerblue; /* Cambiar el color del borde cuando el input tenga información válida */
+}
+
+
+
+/* LOGIN */
+
+
+.contenedor-correo2,
+.contenedor-contraseña {
+    position: relative;
+    margin: 15px;
+    
+   
+}
+
+.input-correo1,
+.input-contraseña{
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s blue;
+}
+
+.placeholder-correo1,
+.placeholder-contraseña {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: transparent;
+}
+
+.input-correo1:focus + .placeholder-correo1,
+.input-contraseña:focus + .placeholder-contraseña {
+    top: -15px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+}
+.input-correo1:focus + .placeholder-correo1,
+    .input-correo1:not(:placeholder-shown) + .placeholder-correo1 {
+        top: -20px;
+        left: -10px;
+        font-size: 10px; 
+        color: black;
+        margin: 10px;
+    }
+
+    .input-contraseña:focus + .placeholder-contraseña,
+    .input-contraseña:not(:placeholder-shown) + .placeholder-contraseña {
+      top: -10px; 
+      left: -2px;
+      font-size: 10px; 
+      color: black; 
+        
+    }
+  
+  
+    .input-correo1,
+    .input-contraseña {
+        border: 1px solid #ccc;
+        padding: 8px;
+        transition: border-color 0.3s ease; 
+    }
+
+    .input-borde-azul {
+        border-color: dodgerblue
+    }
