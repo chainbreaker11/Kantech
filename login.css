@@ -107,7 +107,7 @@ body {
 #crearcuenta {
   padding: 12px 30px;
   width: 220px;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: white;
   outline: none;
   border-radius: 5px;
@@ -192,175 +192,341 @@ body {
   margin: 30px;
 }
 
-input.box {
+/*Nombre */
+
+
+.contenedor-nombre {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-nombre input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
   font-size: 16px;
-  color: black;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  transition: .3s;
-}
-
-
-.contenedor-nombre,
-.contenedor-correo {
-    position: relative;
-    margin: 15px;
-    
-   
-}
-
-.input-nombre,
-.input-correo,
-.box {
-    width: 200px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s blue;
-}
-
-.placeholder-label,
-.placeholder-label-correo {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    color: #777;
-    font-size: 16px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    color: transparent;
-}
-
-.input-nombre:focus + .placeholder-label,
-.input-correo:focus + .placeholder-label-correo {
-    top: -15px;
-    left: 0;
-    color: black;
-    font-size: 12px;
-}
-.input-nombre:focus + .placeholder-label,
-    .input-nombre:not(:placeholder-shown) + .placeholder-label {
-        top: -20px;
-        left: -10px;
-        font-size: 10px; 
-        color: black;
-        margin: 10px;
-    }
-
-    .input-correo:focus + .placeholder-label-correo,
-    .input-correo:not(:placeholder-shown) + .placeholder-label-correo {
-      top: -10px; 
-      left: -2px;
-      font-size: 10px; 
-      color: black; 
-        
-    }
-
-    .contenedor-input {
-      position: relative;
-      margin-bottom: 20px;
-  }
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
   
-  .input-nombre {
-    border: 1px solid #ccc;
-    padding: 8px;
-    transition: border-color 0.3s ease; 
+}
+.contenedor-nombre input:focus,
+.contenedor-nombre input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
 }
 
-.input-nombre:focus {
-    border-color: dodgerblue; 
-}
-.input-nombre,
-.input-correo,
-.box {
-    border: 1px solid #ccc;
-    padding: 8px;
-    transition: border-color 0.3s ease; 
-}
-
-.input-borde-azul {
-    border-color: dodgerblue 
+.contenedor-nombre label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
 }
 
-.box {
-  border: 1px solid #ccc;
-  padding: 8px;
-  transition: border-color 0.3s ease; /* Transición suave del color del borde */
+
+.contenedor-nombre:focus-within label,
+.contenedor-nombre input:not(:placeholder-shown) ~ label {
+  color: black; 
 }
 
-.box:valid {
-  border-color: dodgerblue; /* Cambiar el color del borde cuando el input tenga información válida */
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background-color: black;
+  
 }
+.contenedor-nombre input:focus ~ label,
+.contenedor-nombre input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
+
+/*Correo*/
+
+
+
+.contenedor-correo {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-correo input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
+}
+.contenedor-correo input:focus,
+.contenedor-correo input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+.contenedor-correo label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-correo:focus-within label,
+.contenedor-correo input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-correo input:focus ~ label,
+.contenedor-correo input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
+/*contraseña*/
+
+
+
+.contenedor-contraseña {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-contraseña input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease;
+}
+.contenedor-contraseña input:focus,
+.contenedor-contraseña input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+.contenedor-contraseña label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-contraseña:focus-within label,
+.contenedor-contraseña input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-contraseña input:focus ~ label,
+.contenedor-contraseña input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
+
+
+/*repetir contraseña*/
+
+.contenedor-contraseña1 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-contraseña1 input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease;
+}
+
+.contenedor-contraseña1 label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+.contenedor-contraseña1 input:focus,
+.contenedor-contraseña1 input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-contraseña1:focus-within label,
+.contenedor-contraseña1 input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-contraseña1 input:focus ~ label,
+.contenedor-contraseña1 input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
 
 
 
 /* LOGIN */
-
-
-.contenedor-correo2,
-.contenedor-contraseña {
-    position: relative;
-    margin: 15px;
-    
-   
+.sesion {
+  margin: 30px;
 }
 
-.input-correo1,
-.input-contraseña{
-    width: 200px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s blue;
+/* correo */
+
+.contenedor-correo2 {
+  position: relative;
+  margin-bottom: 20px;
 }
 
-.placeholder-correo1,
-.placeholder-contraseña {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    color: #777;
-    font-size: 16px;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    color: transparent;
+.contenedor-correo2 input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease;
 }
 
-.input-correo1:focus + .placeholder-correo1,
-.input-contraseña:focus + .placeholder-contraseña {
-    top: -15px;
-    left: 0;
-    color: black;
-    font-size: 12px;
+.contenedor-correo2 label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
 }
-.input-correo1:focus + .placeholder-correo1,
-    .input-correo1:not(:placeholder-shown) + .placeholder-correo1 {
-        top: -20px;
-        left: -10px;
-        font-size: 10px; 
-        color: black;
-        margin: 10px;
-    }
+.contenedor-correo2 input:focus,
+.contenedor-correo2 input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
 
-    .input-contraseña:focus + .placeholder-contraseña,
-    .input-contraseña:not(:placeholder-shown) + .placeholder-contraseña {
-      top: -10px; 
-      left: -2px;
-      font-size: 10px; 
-      color: black; 
-        
-    }
-  
-  
-    .input-correo1,
-    .input-contraseña {
-        border: 1px solid #ccc;
-        padding: 8px;
-        transition: border-color 0.3s ease; 
-    }
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-correo2:focus-within label,
+.contenedor-correo2 input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-correo2 input:focus ~ label,
+.contenedor-correo2 input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
 
-    .input-borde-azul {
-        border-color: dodgerblue
-    }
+
+
+
+/* contraseña */
+.contenedor-contraseña3 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-contraseña3 input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease;
+}
+
+.contenedor-contraseña3 label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+.contenedor-contraseña3 input:focus,
+.contenedor-contraseña3 input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-contraseña3:focus-within label,
+.contenedor-contraseña3 input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-contraseña3 input:focus ~ label,
+.contenedor-contraseña3 input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}

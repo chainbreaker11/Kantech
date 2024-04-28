@@ -48,32 +48,3 @@ btn_registro.addEventListener('click',(event)=>{
     }
     login_form.reset
 })
-
-const inputNombre = document.getElementById('nombre');
-const inputCorreo = document.getElementById('email');
-
-
-
-inputNombre.addEventListener('focus', () => {
-    inputNombre.classList.add('input-borde-azul');
-});
-
-inputCorreo.addEventListener('focus', () => {
-    inputCorreo.classList.add('input-borde-azul');
-});
-
-inputNombre.addEventListener('input', () => {
-    if (inputNombre.value.trim() !== '') {
-        inputNombre.classList.add('input-borde-azul');
-    } else {
-        inputNombre.classList.remove('input-borde-azul');
-    }
-});
-
-inputCorreo.addEventListener('input', () => {
-    if (inputCorreo.value.trim() !== '') {
-        inputCorreo.classList.add('input-borde-azul');
-    } else {
-        inputCorreo.classList.remove('input-borde-azul');
-    }
-});
