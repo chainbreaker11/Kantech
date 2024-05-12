@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="productos.css">
+    <title>Kantech</title>
+  </head>
+  <body>
+      
+    <!-- Header -->
+    <header class="nav-container">
+      <div class="logo-container">
+        <img class="nav-logo" src="img/LOGOKARDEXPROTO.png" alt="" />
+      </div>
+
+      <div class="searchbar">
+        <div class="searchbar-container">
+          <div class="imagesearch">
+            <img src="img/busqueda.png" alt="" />
+          </div>
+
+          <input type="Buscar..." placeholder="Busca Celulares, Computadoras etc..."/>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="currency">
+          <button class="moneda">MXN ▼</button>
+        </div>
+        <div class="usuario">
+          <button class="user">
+            <img src="img/usuario.png" alt="" />
+          </button>
+        </div>
+        <div class="sends">
+          <button class="envio">
+            <img src="img/entrega.png" alt="" />
+          </button>
+        </div>
+        <div class="cart">
+          <button class="carrito">
+            <img src="img/carrito-de-compras.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sección de productos -->
+    <div class="all-body">
+        <div class="seccionProductos">
+          <!-- Seccion de filtros -->
+            <div class="filtros">
+                <div class="filtrosCategoria">
+                    <h4>Categorías</h4>
+                    <ul>
+                    <li><input type="checkbox" id="celulares" /> <label for="celulares">Celulares</label></li>
+                    <li><input type="checkbox" id="computadoras" /> <label for="computadoras">Computadoras</label></li>
+                    <li><input type="checkbox" id="tablets" /> <label for="tablets">Tablets</label></li>
+                    <!-- Agrega más categorías aquí -->
+                    </ul>
+                </div>
+                <div class="filtrosSegunPrecio">
+                    <h4>Rango de Precio</h4>
+                    <ul>
+                        <li><a href="#" class="filtroDePrecio" data-min="0" data-max="999999">Cualquier precio</a></li>
+                        <li><a href="#" class="filtroDePrecio" data-min="1500" data-max="3000">$1500 a $3000</a></li>
+                        <li><a href="#" class="filtroDePrecio" data-min="3000" data-max="6000">$3000 a $6000</a></li>
+                        <li><a href="#" class="filtroDePrecio" data-min="6000" data-max="9000">$6000 a $9000</a></li>
+                        <li><a href="#" class="filtroDePrecio" data-min="9000">$9000 y Más</a></li>
+                        <!-- Agregar más rangos aquí -->
+                    </ul>
+                    <div class="rangoPersonalizadoDePrecios">
+                        <input type="number" id="precioMin" placeholder="$ Mín." />
+                        <input type="number" id="precioMax" placeholder="$ Máx." />
+                        <button id="aplicarRango">Ir</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mostrar los productos -->
+              <div class="productosGrid grid">
+              <!-- Los productos se agregarán dinámicamente aquí -->
+              </div>
+        </div>
+    </div>   
+    <!-- Footer -->
+    <footer>
+      <div class="footerContainer">
+          <div class="footerNav">
+              <ul><li><a href="">Home</a></li>
+                  <li><a href="">Nosotros</a></li>
+                  <li><a href="">Contacto</a></li>
+                  <li><a href="">Carrito</a></li>
+              </ul>
+          </div>  
+      </div>
+      <div class="footerBottom">
+          <p><span class="designer">KANTECH</span></p>
+      </div>
+  </footer>
+  <script src="productos.js"></script>
+  </body>
+</html>
