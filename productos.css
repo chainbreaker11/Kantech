@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.all-body{
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    background: #1111;
+    background: linear-gradient(220deg, rgb(23, 24, 24) 0%, rgba(15,16,17,1) 100%);
+    color: #ffff;
+    min-height: 1000px;
+}
+  
+.seccionProductos {
+  display: flex;
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+  .filtros {
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    min-height: 1000px;
+  }
+  
+  .filtros h4{
+    text-align: center;
+  }
+
+.filtrosCategoria {
+  margin-bottom: 20px;
+}
+  
+  .filtrosCategoria ul {
+    list-style-type: none;
+}
+
+.filtrosSegunPrecio ul li{
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.filtrosSegunPrecio ul li:hover{
+    color: #fdcc0d;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+  .productosGrid {
+    border-radius: 4rem;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .cartaProducto {
+    background: rgb(67,67,67);
+    background: linear-gradient(220deg, rgba(67,67,67,1) 0%, rgba(0,0,0,1) 100%);
+    border-radius: 1rem;
+    padding: 20px;
+    display: grid;
+    max-width: 300px;
+    max-height: 500px;
+    grid-template-rows: 235px auto auto auto;
+    grid-template-areas:
+      "image"
+      "name"
+      "price"
+      "button";
+  }
+  
+  .cartaProducto img {
+    grid-area: image;
+    max-width: 100%;
+    height: 220px;
+    object-fit: contain;
+    align-items: center;
+    justify-self: center;
+  }
+  
+  .cartaProducto h3 {
+    grid-area: name;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .cartaProducto p {
+    grid-area: price;
+    margin: 10px 0;
+    text-align: center;
+    color: #fdcc0d;
+    font-size: 1rem;
+  }
+  
+  .cartaProducto .agregarAlCarrito {
+    grid-area: button;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #696969  100%);
+    border-radius: 4rem;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: box-shadow .4s;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    border: white;
+    max-height: 35px;
+  }
+
+  .cartaProducto .agregarAlCarrito:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 10px #eee;
+    transition: 0.5s;
+  }
+  
+  .filtroDePrecio-links {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+  }
+
+.filtrosSegunPrecio ul {
+    list-style-type: none;
+}
+
+.filtrosSegunPrecio ul li{
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.filtrosSegunPrecio a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+  .filtroDePrecio-links a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .filtroDePrecio-links a:link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .filtroDePrecio-links a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .rangoPersonalizadoDePrecios {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .rangoPersonalizadoDePrecios input {
+    margin-right: 5px;
+    padding: 5px;
+    flex-grow: 1;
+    border: 1px solid #acacac;
+    width: 3vh;
+    height: 3vh;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, hsl(0, 0%, 0%)0%, hsl(0, 2%, 25%)100%);
+    color: white;
+  }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+  
+  .rangoPersonalizadoDePrecios button {
+    grid-area: button;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #696969  100%);
+    border-radius: 1rem;
+    color: #fff;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: box-shadow .4s;
+    font-family: "Poppins", sans-serif;
+    border: white;
+    width: 6vh;
+  }
+
+  .rangoPersonalizadoDePrecios button:hover{
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 10px #eee;
+    transition: 0.5s;
+  }
+
