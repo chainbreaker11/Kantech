@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container-aviso {
+    height: 100vh; /* Full viewport height */
+}
+
+.aviso-vacio-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icono-vacio {
+    margin-bottom: 20px;
+}
+
+.titulo-vacio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.descripcion-vacio {
+    font-size: 16px;
+    color: #777;
+}
+
+.btn-explorar {
+    font-size: 16px;
+}
+
+.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo img {
+    height: 50px;
+}
+
+.header-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    color: #777;
+}
+
+.step-active {
+    color: #000;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.step-active .step-number {
+    background-color: #000;
+    color: #fff;
+}
+
+.step-title {
+    font-size: 14px;
+}
+
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.cart-item img {
+    max-width: 100%;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.btn-warning {
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-warning:hover {
+    background-color: #e65c00;
+}
