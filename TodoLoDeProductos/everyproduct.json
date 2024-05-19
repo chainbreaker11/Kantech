@@ -31,10 +31,10 @@
       {
         "id": 3,
         "imagen": "recursos/iphone13pro.png",
-        "titulo": "iPhone 13 Pro",
-        "descripcion": "El Apple iPhone 13 Pro con 128GB de almacenamiento es un dispositivo móvil de última generación que combina elegancia y rendimiento. Equipado con una potente cámara triple de 12 MP, este teléfono captura fotos y videos impresionantes en cualquier situación. Su pantalla Super Retina XDR de 6.1 pulgadas ofrece colores vivos y detalles nítidos, ideal para consumir contenido multimedia y trabajar con aplicaciones exigentes. Con 128GB de almacenamiento interno, tienes espacio suficiente para guardar fotos, videos, aplicaciones y archivos sin preocuparte por el espacio. Además, cuenta con un procesador A15 Bionic, que ofrece un rendimiento rápido y fluido para todas tus necesidades diarias.",
+        "titulo": "iPhone 15 Pro",
+        "descripcion": "El Apple iPhone 15 Pro con 128GB de almacenamiento es un dispositivo móvil de última generación que combina elegancia y rendimiento. Equipado con una potente cámara triple de 12 MP, este teléfono captura fotos y videos impresionantes en cualquier situación. Su pantalla Super Retina XDR de 6.1 pulgadas ofrece colores vivos y detalles nítidos, ideal para consumir contenido multimedia y trabajar con aplicaciones exigentes. Con 128GB de almacenamiento interno, tienes espacio suficiente para guardar fotos, videos, aplicaciones y archivos sin preocuparte por el espacio. Además, cuenta con un procesador A15 Bionic, que ofrece un rendimiento rápido y fluido para todas tus necesidades diarias.",
         "costos": {
-          "MXN": 28000,
+          "MXN": 25000,
           "USD": 1500,
           "EU": 1400
         },
@@ -167,6 +167,34 @@
         "categoria": "tablet",
         "marca": "amazon",
         "enlace": "producto12.html"
+      },
+      {
+        "id": 13,
+        "imagen": "recursos/macbookair.png",
+        "titulo": "MacBook Air 13",
+        "descripcion": "Laptop ultraportátil conocida por su diseño delgado y ligero, ideal para usuarios que necesitan movilidad y rendimiento. Equipada con procesadores Intel de décima generación, ofrece una experiencia rápida y eficiente para tareas cotidianas. Su pantalla Retina de 13.3 pulgadas con tecnología True Tone y teclado Magic Keyboard proporcionan una experiencia visual cómoda y una escritura precisa.",
+        "costos": {
+          "MXN": 8300,
+          "USD": 500,
+          "EU": 400
+        },
+        "categoria": "computadora",
+        "marca": "apple",
+        "enlace": "producto13.html"
+      },
+      {
+        "id": 14,
+        "imagen": "recursos/audifonobeat.png",
+        "titulo": "Beats SOLO 3",
+        "descripcion": "Beats ha mejorado su auricular On Ear por excelencia, Beats Solo 3. En esta ocasión las evoluciones se centran más en la vertiente tecnológica ya que como veremos a continuación, estos cascos bluetooth son bastantes similares a su modelo anterior Beats Solo 2 en lo que a diseño y acabado refiere, siendo en esta ocasión las evoluciones más notables en el apartado de funcionalidad y calidad de sonido.",
+        "costos": {
+          "MXN": 3800,
+          "USD": 230,
+          "EU": 130
+        },
+        "categoria": "computadora",
+        "marca": "apple",
+        "enlace": "producto13.html"
       }
     ]
   }
