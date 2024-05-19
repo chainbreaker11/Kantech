@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="allproducts.css">
+    <title>Kantech - Todos los Productos</title>
+</head>
+<body>
+    <div class="all-body">
+        <div class="page-wrapper">
+            <main>
+                <div class="all-main">
+                    <section class="collection-page_header collection-page_header_no-image">
+                        <div class="collection-page_content-container">
+                            <div class="collection-page_text-container">
+                                <div class="collection-page_breadcrumbs">
+                                    <a href="collections.html">Productos</a>
+                                    /
+                                    <a href="allproducts.html" class="current" aria-current="page">Todos</a>
+                                </div>
+                                <h1 class="collection-page_title h2">Todos</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="collection-page_sorting container">
+                        <form id="FacetSortForm">
+                            <select name="sort_by" id="SortBy" class="select">
+                                <option value="" disabled selected>Rango de precios</option>
+                                <option value="price-ascending">Precio, menor a mayor</option>
+                                <option value="price-descending">Precio, mayor a menor</option>
+                            </select>
+                            <select name="moneda_valor" id="moneda" class="select">
+                                <option value="mxn">Peso Mexicano (MXN)</option>
+                                <option value="eur">Euro (€)</option>
+                                <option value="usd">American Dollar (USD)</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="collections-section container">
+                        <div> <!--  div -->
+                            <aside id="main-collection-filters">
+                                <div class="facets-container">
+                                    <div class="facets">
+                                        <form id="FacetFiltersForm" class="facets_form">
+                                            <div class="facets_wrapper">
+                                                <details class="facets_disclosure">
+                                                    <summary class="facets_summary">
+                                                        <div>
+                                                            <span>Categorías</span>
+                                                            <span class="arrow-icon">▲</span>
+                                                        </div>
+                                                    </summary>
+                                                    <div class="facets_display">
+                                                        <fieldset class="facets-wrap parent-wrap">
+                                                            <ul class="facets_list">
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="computadora">
+                                                                        <span class="filter-label">COMPUTADORAS</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="celular">
+                                                                        <span class="filter-label">CELULARES</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="tablet">
+                                                                        <span class="filter-label">TABLETS</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="almacenamiento">
+                                                                        <span class="filter-label">ALMACENAMIENTO</span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                    </div>  
+                                                </details>
+                                                <details class="facets_disclosure">
+                                                    <summary class="facets_summary">
+                                                        <div>
+                                                            <span>Marcas</span>
+                                                            <span class="arrow-icon">▲</span>
+                                                        </div>
+                                                    </summary>
+                                                    <div class="facets_display">
+                                                        <fieldset class="facets-wrap parent-wrap">
+                                                            <ul class="facets_list">
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="Starforge">
+                                                                        <span class="filter-label">STARFORGE</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="Samsung">
+                                                                        <span class="filter-label">SAMSUNG</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="Apple">
+                                                                        <span class="filter-label">APPLE</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="Kingston">
+                                                                        <span class="filter-label">KINGSTON</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li class="list-menu_item facets_item">
+                                                                    <label class="facet-checkbox">
+                                                                        <input type="checkbox" value="Amazon">
+                                                                        <span class="filter-label">AMAZON</span>
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </fieldset>
+                                                    </div>  
+                                                </details>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </aside>
+                            <div class="collection product-grid_products" id="product-grid">
+                                
+                            </div>
+                        </div> <!--  div -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="displayTodosProductos.js"></script>
+</body>
+</html>

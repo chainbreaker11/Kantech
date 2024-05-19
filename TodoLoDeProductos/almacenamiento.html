@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elementos.css">
+    <title>Kantech - Almacenamiento</title>
+</head>
+<body>
+    <div class="all-body">
+        <div class="page-wrapper">
+            <main>
+                <div class="all-main">
+                    <section class="collection-page_header collection-page_header_no-image">
+                        <div class="collection-page_content-container">
+                            <div class="collection-page_text-container">
+                                <div class="collection-page_breadcrumbs">
+                                    <a href="collections.html">Productos</a>
+                                    /
+                                    <a href="almacenamiento.html" class="current" aria-current="page">Almacenamiento</a>
+                                </div>
+                                <h1 class="collection-page_title h2">Almacenamiento</h1>
+                                <p>
+                                    Capacidad y velocidad adaptadas a diferentes necesidades, bastante sólido, ¿no lo crees?
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="collection-page_sorting container">
+                        <form id="FacetSortForm">
+                            <select name="sort_by" id="SortBy" class="select">
+                                <option value="" disabled selected>Rango de precios</option>
+                                <option value="price-ascending">Precio, menor a mayor</option>
+                                <option value="price-descending">Precio, mayor a menor</option>
+                            </select>
+                            <select name="moneda_valor" id="moneda" class="select">
+                                <option value="mxn">Peso Mexicano (MXN)</option>
+                                <option value="eur">Euro (€)</option>
+                                <option value="usd">American Dollar (USD)</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="collection-page_sorting container">
+                        <div class="collections-section container">
+                            <div class="collection product-grid_products" id="product-grid">      
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="displayelementos.js"></script>
+</body>
+</html>

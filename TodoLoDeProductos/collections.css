@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.all-body{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    color: #fff;
+    background: #111111;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.page-wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.all-main{
+    padding-top: 90px;
+    flex-grow: 1;
+}
+
+.collections {
+    padding: 2rem 0 4rem;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 1260px;
+    padding: 0 2.5rem;
+}
+
+.collections_header {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collections_header h1.title{
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.collections_header .secundary-button {
+    line-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+    width: 100%;
+    text-align: right;
+    margin-top: .25rem;
+    font-weight: 700;
+}
+
+.secundary-button {
+    cursor: pointer;
+    font-size: 15px;
+    background: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: .5px;
+}
+
+.secundary-button:hover {
+    transition: .4s ease-in-out;
+    color: linear-gradient(90deg, hsl(23, 4%, 28%)0%, hsl(23, 4%, 8%)100%);
+    text-shadow: 0 0 20px #eee;
+    color: #fff;
+    text-decoration: none;
+}
+
+.secundary-button span {
+    color: #bdf9a1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.collections .collection-list.feautured-collections {
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+.collections .collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.collections .collection-list .feautured-collections .collection-list_item .tarjeta {
+    display: flex;
+}
+
+.collections .collection-list.feautured-collections .collection-list_item {
+    width: 38%;
+    margin-bottom: 37px;
+}
+
+.collections .collection-list_item .tarjeta {
+    padding: 100px;
+}
+
+.collections .collection-list_item .tarjeta--media {
+    display: block;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.collections .collection-list_item {
+    background: linear-gradient(154deg, rgba(79, 84, 98, 0.9) -10%, #131313 70%);
+    border: 2px solid #2f323b;
+    padding: 34px 15px;
+    flex: 1;
+}
+
+.collections .collection-list.feautured-collections .tarjeta {
+    display: flex;
+}
+
+.collections .collection-list.feautured-collections .tarjeta .media {
+    min-width: 250px;
+}
+
+.collections .collection-list.feautured-collections img {
+    height: 245px;
+}
+
+.collections .collection-list_item img {
+    height: 180px;
+    margin: 0 auto;
+    width: auto;
+    padding-bottom: 10px;
+}
+
+img.cover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+}
+
+.collections .collection-list_item .card_text {
+    color: #bdbdbd;
+    font-size: 22px;
+    line-height: 28px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.collections .collection-list.feautured-collections .tarjeta .card_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.collections .collection-list.feautured-collections .tarjeta h2 {
+    font-size: 28px;
+    line-height: 54px;
+}
+
+.collections .collection-list_item .card_text h2 {
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.collections .collection-list_item .card_text p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.collections .collection-list .tarjeta {
+    text-decoration: none;
+}
+
+.collections .collection-list_item .card_text .primary-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    line-height: 15px;
+    height: 42px;
+    margin-top: 18px;
+}
+
+.primary-button {
+    cursor: pointer;
+    min-width: 150px;
+    max-width: 540px;
+    padding: 5px 30px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 4rem;
+    border: 2px solid #2f323b;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+    background-size: 200% ;
+    box-shadow: 0 0 1px #eee;
+    letter-spacing: .5px;
+    display: block;
+}
+
+.primary-button:hover {
+    background: linear-gradient(90deg, hsl(23, 4%, 28%)0%, hsl(23, 4%, 8%)100%);
+    background-position: right center;
+    box-shadow: 0 0 10px #eee;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
