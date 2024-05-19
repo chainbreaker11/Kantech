@@ -19,7 +19,7 @@ a{
 }
 .custom-MenuElements {
     margin-top: 10px;
-    color: #ffffff; /* o simplemente white */
+    color: #ffffff;
     font-weight: 500;
     transition: color .4s;
 }
@@ -61,3 +61,4 @@ a{
 .nav-links:hover{
  color: blue;
 } 
+/* Fin de CSS navbar */ 
