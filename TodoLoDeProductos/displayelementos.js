@@ -1,31 +1,33 @@
 // Obtener el archivo JSON
-fetch('everyproduct.json')
-  .then(response => response.json())
-  .then(data => {
+fetch("everyproduct.json")
+  .then((response) => response.json())
+  .then((data) => {
     // Detectar el nombre del archivo HTML actual
     const pathname = window.location.pathname;
-    let lugar = '';
+    let lugar = "";
 
-    if (pathname.includes('pc.html')) {
-      lugar = 'computadora';
-    } else if (pathname.includes('celulares.html')) {
-      lugar = 'celular';
-    } else if (pathname.includes('tablets.html')) {
-      lugar = 'tablet';
-    } else if (pathname.includes('perifericos.html')) {
-      lugar = 'periferico';
-    } else if (pathname.includes('almacenamiento.html')) {
-      lugar = 'almacenamiento';
+    if (pathname.includes("pc.html")) {
+      lugar = "computadora";
+    } else if (pathname.includes("celulares.html")) {
+      lugar = "celular";
+    } else if (pathname.includes("tablets.html")) {
+      lugar = "tablet";
+    } else if (pathname.includes("perifericos.html")) {
+      lugar = "periferico";
+    } else if (pathname.includes("almacenamiento.html")) {
+      lugar = "almacenamiento";
     }
 
-    let productos = data.productos.filter(producto => producto.categoria === lugar);
-    const productGrid = document.getElementById('product-grid');
+    let productos = data.productos.filter(
+      (producto) => producto.categoria === lugar
+    );
+    const productGrid = document.getElementById("product-grid");
 
     // Funciones de ordenamiento
     const sortByPrice = (order) => {
-      if (order === 'price-ascending') {
+      if (order === "price-ascending") {
         productos.sort((a, b) => a.costos.MXN - b.costos.MXN);
-      } else if (order === 'price-descending') {
+      } else if (order === "price-descending") {
         productos.sort((a, b) => b.costos.MXN - a.costos.MXN);
       }
       renderProducts();
@@ -33,40 +35,51 @@ fetch('everyproduct.json')
 
     // Función de filtrado
     const filterProducts = () => {
-      const categoriesFilter = Array.from(document.querySelectorAll(`input[type="checkbox"][value^='${lugar}']:checked`))
-        .map(checkbox => checkbox.value.toLowerCase());
-      const brandsFilter = Array.from(document.querySelectorAll('input[type="checkbox"][value^="Starforge"]:checked, input[type="checkbox"][value^="Samsung"]:checked, input[type="checkbox"][value^="Apple"]:checked, input[type="checkbox"][value^="Kingston"]:checked, input[type="checkbox"][value^="Amazon"]:checked'))
-        .map(checkbox => checkbox.value.toLowerCase());
+      const categoriesFilter = Array.from(
+        document.querySelectorAll(
+          `input[type="checkbox"][value^='${lugar}']:checked`
+        )
+      ).map((checkbox) => checkbox.value.toLowerCase());
+      const brandsFilter = Array.from(
+        document.querySelectorAll(
+          'input[type="checkbox"][value^="Starforge"]:checked, input[type="checkbox"][value^="Samsung"]:checked, input[type="checkbox"][value^="Apple"]:checked, input[type="checkbox"][value^="Kingston"]:checked, input[type="checkbox"][value^="Amazon"]:checked'
+        )
+      ).map((checkbox) => checkbox.value.toLowerCase());
 
-      productos = data.productos.filter(producto => {
-        const categoria = producto.categoria.toLowerCase();
-        const marca = producto.marca ? producto.marca.toLowerCase() : ''; // Si el campo marca existe
-        return (categoriesFilter.length === 0 || categoriesFilter.includes(categoria)) &&
-          (brandsFilter.length === 0 || brandsFilter.includes(marca));
-      }).filter(producto => producto.categoria === lugar);
+      productos = data.productos
+        .filter((producto) => {
+          const categoria = producto.categoria.toLowerCase();
+          const marca = producto.marca ? producto.marca.toLowerCase() : ""; // Si el campo marca existe
+          return (
+            (categoriesFilter.length === 0 ||
+              categoriesFilter.includes(categoria)) &&
+            (brandsFilter.length === 0 || brandsFilter.includes(marca))
+          );
+        })
+        .filter((producto) => producto.categoria === lugar);
 
       renderProducts();
     };
 
     // Función para renderizar los productos
     const renderProducts = () => {
-      productGrid.innerHTML = '';
-      productos.forEach(producto => {
-        const productItem = document.createElement('div');
-        productItem.classList.add('product-grid_item');
+      productGrid.innerHTML = "";
+      productos.forEach((producto) => {
+        const productItem = document.createElement("div");
+        productItem.classList.add("product-grid_item");
 
-        const moneda = document.getElementById('moneda').value;
+        const moneda = document.getElementById("moneda").value;
         let precio;
         let monedaValor;
-        if (moneda === 'mxn') {
+        if (moneda === "mxn") {
           precio = producto.costos.MXN;
-          monedaValor = 'MXN';
-        } else if (moneda === 'eur') {
+          monedaValor = "MXN";
+        } else if (moneda === "eur") {
           precio = producto.costos.EU;
-          monedaValor = '€';
-        } else if (moneda === 'usd'){
+          monedaValor = "€";
+        } else if (moneda === "usd") {
           precio = producto.costos.USD;
-          monedaValor = 'USD';
+          monedaValor = "USD";
         }
 
         const productCard = `
@@ -101,17 +114,19 @@ fetch('everyproduct.json')
     renderProducts();
 
     // Evento de cambio en el select de ordenamiento
-    document.getElementById('SortBy').addEventListener('change', (event) => {
+    document.getElementById("SortBy").addEventListener("change", (event) => {
       sortByPrice(event.target.value);
     });
 
     // Evento de cambio en los checkboxes de filtrado
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(checkbox => {
-      checkbox.addEventListener('change', filterProducts);
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", filterProducts);
     });
 
     // Evento de cambio en el select de moneda
-    document.getElementById('moneda').addEventListener('change', renderProducts);
+    document
+      .getElementById("moneda")
+      .addEventListener("change", renderProducts);
   })
-  .catch(error => console.error('Error al cargar el archivo JSON:', error));
+  .catch((error) => console.error("Error al cargar el archivo JSON:", error));
