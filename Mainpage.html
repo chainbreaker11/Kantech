@@ -12,55 +12,164 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg  fixed-top  custom-navbar" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand " href="#"><img src="img/LogoKantech.png" class="container-img"></a>
-          <a href="#" class="nav-logo">Kantech</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end custom-navbar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title nav-logo" id="offcanvasNavbarLabel">Kantech</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 custom-MenuElements">
-                <li class="nav-item dropdown">
+  <div class="all-body">
+    <div class="page-wrapper">
+      <nav class="navbar navbar-expand-lg  fixed-top  custom-navbar" data-bs-theme="dark">
+          <div class="container-fluid">
+            <a class="navbar-brand " href="#"><img src="img/LogoKantech.png" class="container-img"></a>
+            <a href="#" class="nav-logo">Kantech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end custom-navbar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title nav-logo" id="offcanvasNavbarLabel">Kantech</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 custom-MenuElements">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Celulares</a></li>
+                        <li><a class="dropdown-item" href="#">Tablets</a></li>
+                        <li><a class="dropdown-item" href="#">Computadoras</a></li>
+                      </ul>
+                    </li>
+                  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
+                      Comunidad
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Celulares</a></li>
-                      <li><a class="dropdown-item" href="#">Tablets</a></li>
-                      <li><a class="dropdown-item" href="#">Computadoras</a></li>
+                      <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                      <li><a class="dropdown-item" href="#">Proveedores</a></li>
+                      <li><a class="dropdown-item" href="#">FAQs</a></li>
                     </ul>
                   </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Comunidad
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Otra Seccion</a>
+                    </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2 container-inputsearch nav-links" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn container-buttonsearch nav-links" type="submit"> <i class="ri-search-2-line"></i></button>
+                </form>
+                <i class="ri-user-3-fill container-icons nav-links"></i>
+                <i class="ri-shopping-cart-line container-icons nav-links"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="all-main">
+          <div class="homepage-hero">
+            <div class="homepage-hero_content">
+              <h1>LAS MEJORES PC EN EL UNIVERSO</h1>
+              <div class="btn">
+                  <a href="/TodoLoDeProductos/pc.html" class="primary-button">
+                      <span>Ver equipos</span>
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                    <li><a class="dropdown-item" href="#">Proveedores</a></li>
-                    <li><a class="dropdown-item" href="#">FAQs</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Otra Seccion</a>
-                  </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2 container-inputsearch nav-links" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn container-buttonsearch nav-links" type="submit"> <i class="ri-search-2-line"></i></button>
-              </form>
-              <i class="ri-user-3-fill container-icons nav-links"></i>
-              <i class="ri-shopping-cart-line container-icons nav-links"></i>
+              </div>
+            </div>
+          </div>
+          <div class="homepage-featured-wrapper">
+            <div class="homepage-featured">
+                <div class="featured-product_img">
+                    <img src="/TodoLoDeProductos/recursos/pc1.webp" alt="Horizon">
+                </div>
+                <div class="product-details">
+                    <div class="product-details_inner">
+                        <h2 class="product-details_title">HORIZON I</h2>
+                        <h3 class="product-details_subtitle">HIGH-END PC</h2>
+                          <div class="product-details_price">
+                            <span class="price sale-price">25,000 MXN</span>
+                          </div>
+                          <div class="product-description">
+                            <p>
+                              El producto cuenta con un potente procesador Intel Core i5 12400F, 16GB de RAM para un rendimiento fluido, una tarjeta gráfica AMD Radeon RX 6650 XT de 8GB para gráficos de alta calidad, y un almacenamiento ultrarrápido de 1TB PCle 4.0 NVME, ideal para gaming y tareas exigentes.
+                            </p>
+                          </div>
+                          <div class="featured-product_cta">
+                            <a href="/TodoLoDeProductos/producto1.html" class="featured-product_link">Ver detalles del producto</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="homepage-featured-wrapper">
+            <div class="homepage-featured-2">
+                <div class="product-details">
+                    <div class="product-details_inner">
+                        <h2 class="product-details_title">Logitech PRO X Superlight</h2>
+                        <h3 class="product-details_subtitle">Periférico</h2>
+                          <div class="product-details_price">
+                            <span class="price sale-price">2,300 MXN</span>
+                          </div>
+                          <div class="product-description">
+                            <p>
+                              Es un ratón inalámbrico ultra ligero diseñado para satisfacer las necesidades de los jugadores profesionales. Con un peso de solo 63 gramos, este ratón ofrece una experiencia de juego ágil y sin esfuerzo, ideal para movimientos rápidos y precisos durante las partidas. Equipado con el sensor HERO 25K de Logitech, el PRO X Superlight proporciona una precisión excepcional con hasta 25,600 DPI y una velocidad de seguimiento de más de 400 IPS.
+                            </p>
+                          </div>
+                          <div class="featured-product_cta">
+                            <a href="/TodoLoDeProductos/producto9.html" class="featured-product_link">Ver detalles del producto</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="featured-product_img">
+                  <img src="/TodoLoDeProductos/recursos/prox.png" alt="Horizon">
+              </div>
+            </div>
+          </div>
+          <div class="homepage-featured-wrapper">
+            <div class="homepage-featured-3">
+                <div class="featured-product_img">
+                  <img src="/TodoLoDeProductos/recursos/galaxys21.webp" alt="Horizon">
+              </div>
+              <div class="product-details">
+                <div class="product-details_inner">
+                    <h2 class="product-details_title">Samsung Galaxy S21</h2>
+                    <h3 class="product-details_subtitle">Celular</h2>
+                      <div class="product-details_price">
+                        <span class="price sale-price">20,000 MXN</span>
+                      </div>
+                      <div class="product-description">
+                        <p>
+                          Un teléfono inteligente de alto rendimiento que combina diseño elegante con tecnología avanzada. Equipado con un potente procesador Exynos 2100, este dispositivo ofrece un rendimiento fluido y rápido, ideal para multitareas intensivas, juegos y streaming de contenido. Su pantalla Dynamic AMOLED 2X de 6.2 pulgadas ofrece colores vibrantes y una resolución impresionante, perfecta para ver videos y navegar por la web.
+                        </p>
+                      </div>
+                      <div class="featured-product_cta">
+                        <a href="/TodoLoDeProductos/producto8.html" class="featured-product_link">Ver detalles del producto</a>
+                      </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="newsletter-section">
+            <div class="contenedor">
+                <div class="newsletter">
+                  <div class="newsletter_content">
+                    <h2> Descubre el resto de productos </h2>
+                    <div>
+                      <p>
+                        Nuestra selección de productos abarca desde equipos de computo hasta dispositivos móviles e inclusive periféricos.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="newsletter_form">
+                    <div class="btn">
+                      <a href="/TodoLoDeProductos/collections.html" class="primary-button">
+                          <span>Todos los productos</span>
+                      </a>
+                  </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
-      </nav>
-
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
