@@ -42,6 +42,21 @@
                     </p>
                   </div>
                   <div class="add-to-cart">
+                    <div class="carrito-item">
+                      <img src="${imagenSrc}" width="80px" alt="">
+                      <div class="carrito-item-detalles">
+                          <span class="carrito-item-titulo">${titulo}</span>
+                          <div class="selector-cantidad">
+                              <i class="fa-solid fa-minus restar-cantidad"></i>
+                              <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                              <i class="fa-solid fa-plus sumar-cantidad"></i>
+                          </div>
+                          <span class="carrito-item-precio">${precio}</span>
+                      </div>
+                      <button class="btn-eliminar">
+                          <i class="fa-solid fa-trash"></i>
+                      </button>
+                  </div>
                     <button class="add-to-cart-btn">Añadir al carrito</button>
                   </div>
                 </div>
@@ -51,6 +66,7 @@
         </main>
       </div>
     </div>
+    <script src="/main/mainpage.js"></script>
     <script src="displayProductoEspecifico.js"></script>
   </body>
 </html>
