@@ -6,7 +6,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    
 }
 
 .custom-navbar{
@@ -75,7 +74,8 @@ a{
     margin: 0 auto;
     line-height: 1.5;
     color: #fff;
-    background: #111111;
+    background: #0A101D;
+    background: linear-gradient(190deg, rgb(0, 0, 0) 0%, #0A101D 100%);
     display: block;
     width: 100%;
     height: 100%;
@@ -412,13 +412,13 @@ a{
 }
 
 .newsletter-section .newsletter {
-    background: #000000 url(TodoLoDeProductos/recursos/banner2.png);
+    background: #0A101D url(TodoLoDeProductos/recursos/banner2.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-between;
     margin: 100px auto 100px;
-    border-top: 3px solid #9ba5b3;
+    border-top: 3px solid #5d6877;
 }
 
 .newsletter {
