@@ -1,0 +1,201 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "imagen": "recursos/pc1.webp",
+        "titulo": "Horizon I",
+        "descripcion": "El producto cuenta con un potente procesador Intel Core i5 12400F, 16GB de RAM para un rendimiento fluido, una tarjeta gráfica AMD Radeon RX 6650 XT de 8GB para gráficos de alta calidad, y un almacenamiento ultrarrápido de 1TB PCle 4.0 NVME, ideal para gaming y tareas exigentes.",
+        "costos": {
+          "MXN": 25000,
+          "USD": 1300,
+          "EU": 1200
+        },
+        "categoria": "computadora",
+        "marca": "starforge",
+        "enlace": "producto1.html"
+      },
+      {
+        "id": 2,
+        "imagen": "recursos/samsunggalaxytab.avif",
+        "titulo": "Tablet Samsung Galaxy Tab",
+        "descripcion": "La tablet Samsung de 10 pulgadas con 64GB de almacenamiento es ideal para quienes buscan versatilidad y portabilidad. Con su pantalla de alta definición y tamaño compacto, ofrece una experiencia visual inmersiva y cómoda. Su almacenamiento de 64GB permite guardar una gran cantidad de aplicaciones, fotos y videos sin preocuparse por quedarse sin espacio. Es perfecta tanto para el entretenimiento como para la productividad, ofreciendo un equilibrio perfecto entre tamaño y capacidad.",
+        "costos": {
+          "MXN": 8000,
+          "USD": 420,
+          "EU": 390
+        },
+        "categoria": "tablet",
+        "marca": "samsung",
+        "enlace": "producto2.html"
+      },
+      {
+        "id": 3,
+        "imagen": "recursos/iphone13pro.png",
+        "titulo": "iPhone 15 Pro",
+        "descripcion": "El Apple iPhone 15 Pro con 128GB de almacenamiento es un dispositivo móvil de última generación que combina elegancia y rendimiento. Equipado con una potente cámara triple de 12 MP, este teléfono captura fotos y videos impresionantes en cualquier situación. Su pantalla Super Retina XDR de 6.1 pulgadas ofrece colores vivos y detalles nítidos, ideal para consumir contenido multimedia y trabajar con aplicaciones exigentes. Con 128GB de almacenamiento interno, tienes espacio suficiente para guardar fotos, videos, aplicaciones y archivos sin preocuparte por el espacio. Además, cuenta con un procesador A15 Bionic, que ofrece un rendimiento rápido y fluido para todas tus necesidades diarias.",
+        "costos": {
+          "MXN": 25000,
+          "USD": 1500,
+          "EU": 1400
+        },
+        "categoria": "celular",
+        "marca": "apple",
+        "enlace": "producto3.html"
+      },
+      {
+        "id": 4,
+        "imagen": "recursos/tecladologitech.webp",
+        "titulo": "Teclado Mecánico Logitech",
+        "descripcion": "El teclado mecánico Logitech con retroiluminación RGB es la elección ideal para aquellos que buscan tanto rendimiento como estilo. Este teclado no solo ofrece una experiencia de escritura excepcional gracias a sus interruptores mecánicos, que proporcionan una respuesta táctil precisa y duradera, sino que también cuenta con retroiluminación RGB personalizable. Esto permite ajustar la iluminación según tus preferencias, creando ambientes únicos y facilitando el uso en entornos con poca luz.",
+        "costos": {
+          "MXN": 2000,
+          "USD": 110,
+          "EU": 100
+        },
+        "categoria": "periferico",
+        "marca": "logitech",
+        "enlace": "producto4.html"
+      },
+      {
+        "id": 5,
+        "imagen": "recursos/discoduroking.png",
+        "titulo": "Disco Duro Externo Kingston",
+        "descripcion": "Una excelente solución de almacenamiento portátil que combina fiabilidad, rendimiento y capacidad. Este dispositivo es ideal para usuarios que necesitan llevar consigo grandes cantidades de datos de manera segura y rápida.",
+        "costos": {
+          "MXN": 1500,
+          "USD": 80,
+          "EU": 75
+        },
+        "categoria": "almacenamiento",
+        "marca": "kingston",
+        "enlace": "producto5.html"
+      },
+      {
+        "id": 6,
+        "imagen": "recursos/pc2.webp",
+        "titulo": "Horizon II",
+        "descripcion": "Especificaciones destacadas como el Intel Core i5 12400F, 16GB de RAM DDR5, la tarjeta gráfica GeForce RTX 4060Ti de 8GB y un almacenamiento rápido de 1TB PCIe 4.0 NVMe, ofrece un rendimiento excepcional tanto para juegos intensivos como para tareas profesionales exigentes.",
+        "costos": {
+          "MXN": 30000,
+          "USD": 1600,
+          "EU": 1500
+        },
+        "categoria": "computadora",
+        "marca": "starforge",
+        "enlace": "producto6.html"
+      },
+      {
+        "id": 7,
+        "imagen": "recursos/iPad_Pro.webp",
+        "titulo": "iPad Pro",
+        "descripcion": "Ofrece una experiencia excepcional para usuarios que buscan potencia y portabilidad. Equipado con un chip M1 de Apple, este dispositivo proporciona un rendimiento increíblemente rápido y eficiente, capaz de manejar incluso las tareas más exigentes como la edición de video y la producción de música. La pantalla Liquid Retina XDR de 11 pulgadas con tecnología ProMotion ofrece colores vibrantes y un brillo impresionante, ideal para ver películas, editar fotos y navegar por la web.",
+        "costos": {
+          "MXN": 22000,
+          "USD": 1200,
+          "EU": 1100
+        },
+        "categoria": "tablet",
+        "marca": "apple",
+        "enlace": "producto7.html"
+      },
+      {
+        "id": 8,
+        "imagen": "recursos/galaxys21.webp",
+        "titulo": "Samsung Galaxy S21",
+        "descripcion": "Un teléfono inteligente de alto rendimiento que combina diseño elegante con tecnología avanzada. Equipado con un potente procesador Exynos 2100, este dispositivo ofrece un rendimiento fluido y rápido, ideal para multitareas intensivas, juegos y streaming de contenido. Su pantalla Dynamic AMOLED 2X de 6.2 pulgadas ofrece colores vibrantes y una resolución impresionante, perfecta para ver videos y navegar por la web.",
+        "costos": {
+          "MXN": 20000,
+          "USD": 1100,
+          "EU": 1000
+        },
+        "categoria": "celular",
+        "marca": "samsung",
+        "enlace": "producto8.html"
+      },
+      {
+        "id": 9,
+        "imagen": "recursos/prox.png",
+        "titulo": "Logitech PRO X Superlight",
+        "descripcion": "Es un ratón inalámbrico ultra ligero diseñado para satisfacer las necesidades de los jugadores profesionales. Con un peso de solo 63 gramos, este ratón ofrece una experiencia de juego ágil y sin esfuerzo, ideal para movimientos rápidos y precisos durante las partidas. Equipado con el sensor HERO 25K de Logitech, el PRO X Superlight proporciona una precisión excepcional con hasta 25,600 DPI y una velocidad de seguimiento de más de 400 IPS.",
+        "costos": {
+          "MXN": 2300,
+          "USD": 138,
+          "EU": 127
+        },
+        "categoria": "periferico",
+        "marca": "logitech",
+        "enlace": "producto9.html"
+      },
+      {
+        "id": 10,
+        "imagen": "recursos/samsung1tb.png",
+        "titulo": "SSD Samsung 1TB",
+        "descripcion": "Es una opción destacada para aquellos que buscan un almacenamiento rápido y confiable. Con un diseño compacto y eficiente, esta SSD ofrece un rendimiento excepcional que acelera significativamente el tiempo de arranque del sistema operativo, la velocidad de carga de aplicaciones y la transferencia de archivos.",
+        "costos": {
+          "MXN": 3500,
+          "USD": 190,
+          "EU": 180
+        },
+        "categoria": "almacenamiento",
+        "marca": "samsung",
+        "enlace": "producto10.html"
+      },
+      {
+        "id": 11,
+        "imagen": "recursos/pc3.webp",
+        "titulo": "Horizon II Elite",
+        "descripcion": "La configuración con CPU AMD Ryzen 5 7600X, 16GB de RAM, una gráfica AMD Radeon RX 7700 XT de 12GB y almacenamiento en un SSD NVMe PCIe 4.0 de 1TB, ofrece un rendimiento excepcional tanto para juegos como para tareas exigentes de trabajo. El procesador Ryzen 5 7600X de AMD proporciona un excelente equilibrio entre precio y rendimiento, asegurando un procesamiento rápido y eficiente para multitarea y aplicaciones intensivas en CPU.",
+        "costos": {
+          "MXN": 38000,
+          "USD": 2200,
+          "EU": 2100
+        },
+        "categoria": "computadora",
+        "marca": "starforge",
+        "enlace": "producto11.html"
+      },
+      {
+        "id": 12,
+        "imagen": "recursos/fire.webp",
+        "titulo": "Tablet Amazon Fire HD 8",
+        "descripcion": "Es una opción atractiva para quienes buscan un dispositivo versátil y económico. Equipada con una pantalla de 8 pulgadas y una resolución de 1280 x 800 píxeles, ofrece una experiencia visual nítida y colorida para ver contenido multimedia, leer libros electrónicos y navegar por la web",
+        "costos": {
+          "MXN": 3000,
+          "USD": 160,
+          "EU": 150
+        },
+        "categoria": "tablet",
+        "marca": "amazon",
+        "enlace": "producto12.html"
+      },
+      {
+        "id": 13,
+        "imagen": "recursos/macbookair.png",
+        "titulo": "MacBook Air 13",
+        "descripcion": "Laptop ultraportátil conocida por su diseño delgado y ligero, ideal para usuarios que necesitan movilidad y rendimiento. Equipada con procesadores Intel de décima generación, ofrece una experiencia rápida y eficiente para tareas cotidianas. Su pantalla Retina de 13.3 pulgadas con tecnología True Tone y teclado Magic Keyboard proporcionan una experiencia visual cómoda y una escritura precisa.",
+        "costos": {
+          "MXN": 8300,
+          "USD": 500,
+          "EU": 400
+        },
+        "categoria": "computadora",
+        "marca": "apple",
+        "enlace": "producto13.html"
+      },
+      {
+        "id": 14,
+        "imagen": "recursos/audifonobeat.png",
+        "titulo": "Beats SOLO 3",
+        "descripcion": "Beats ha mejorado su auricular On Ear por excelencia, Beats Solo 3. En esta ocasión las evoluciones se centran más en la vertiente tecnológica ya que como veremos a continuación, estos cascos bluetooth son bastantes similares a su modelo anterior Beats Solo 2 en lo que a diseño y acabado refiere, siendo en esta ocasión las evoluciones más notables en el apartado de funcionalidad y calidad de sonido.",
+        "costos": {
+          "MXN": 3800,
+          "USD": 230,
+          "EU": 130
+        },
+        "categoria": "periferico",
+        "marca": "apple",
+        "enlace": "producto13.html"
+      }
+    ]
+  }
+  

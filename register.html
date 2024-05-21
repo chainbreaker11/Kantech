@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <header class="login">
+        <div class="contenedor-logo">
+            <img class logo src="img\LOGOKARDEXPROTO.png" alt="Kantech">
+        </div>
+        
+    </header>
+    <div class="contenedor-login">
+        <form action="" class="form" id="login-form">
+            <div class="registro"> <h1>Registro</h1></div>
+           
+            <div class="contenedor-nombre">
+                <input type="text" id="nombre" placeholder="Ingresa nombre" required>
+                <label class="label1">Nombre</label>
+            </div>
+                <div class="contenedor-correo">
+                    <input type="email" placeholder="Ingresa E-mail" required>
+                    <label>E-mail</label>
+            </div>
+            
+            <div class="contenedor-contraseña">
+                <input type="password" placeholder="Ingresa contraseña" required> 
+                <label>Contraseña</label>               
+            </div>
+
+            <div class="contenedor-contraseña1">
+                <input type="password" placeholder="Repetir contraseña" required>  
+                <label>Repetir Contraseña</label>              
+            </div>
+            
+            <div class="container-confirmacion">
+                <input type="checkbox" name="checkbox" id="confirmacion"> He leído y aceptado las <a href="#">Políticas de privacidad</a>
+            </div>
+
+           <div class="contenedor-sesion-opciones" >
+                <button id="submit">Registrarse</button>
+                <input type="submit" value="Acceder con google" id="accedergoogle">
+            </div>        
+
+           
+        
+            
+        </form>
+        
+                <div class="linea-vertical"></div>    
+        
+        <div class="contenedor-ventaja">
+            <div class="ventaja1">
+                <div class="gestion"><img src="img/carro-de-reparto.png" alt="" /></div>
+                <div class="titulo-ventaja1">
+                    <h2>Gestionar tus pedidos</h2>
+                </div>
+                <div class="descripcion-ventaja1">
+                    <p>Ten el control de todos tus pedidos y recibe notificaciones con el seguimiento.</p>
+                </div>
+            </div>
+            <div class="ventaja2">
+                <div class="deseos"><img src="img/deseos.png" alt="" /></div>
+                <div class="titulo-ventaja2">
+                    <h2>Lista de deseos</h2>
+                </div>
+                <div class="descripcion-ventaja2">
+                    <p>Guarda tus productos favoritos en las listas de deseo para recibir notificaciones con ofertas.</p>
+                </div>
+            </div>
+        <script src="scriptregister.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="sweetAlert.js"></script>
+    </body>
+</html>
