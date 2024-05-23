@@ -14,6 +14,10 @@
     color: #ffff;
 }
 
+.custom-navbar .navbar-brand {
+  margin-left: 20px; 
+}
+
 .nav-logo{
     font-size: 1.5rem;
     font-weight: 600;
@@ -35,6 +39,8 @@
     display: block;
     width: auto;
     height: 50px;
+    background: none;
+    border: none;
     
 }
 .container-icons{
@@ -367,13 +373,14 @@ details[open] .arrow-icon {
   margin-top: 60px;
 }
 
-.product-card__image a,
-img {
+.product-card__image a , img {
   height: 300px;
   width: 300px;
   border: 2px solid rgb(44, 44, 43);
   background: linear-gradient(154deg, rgba(79, 84, 98, 0.9) -10%, #131313 70%);
 }
+
+
 
 .product_card_description {
   min-height: 60px;

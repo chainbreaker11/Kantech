@@ -13,10 +13,16 @@
     font-family: "Poppins", sans-serif;
     color: #ffff;
 }
+
+.custom-navbar .navbar-brand {
+    margin-left: 20px; 
+}
+
 .nav-logo{
     font-size: 1.5rem;
     font-weight: 600;
     color: #ffff;
+    margin-left: 10px;
 }
 
 a{
@@ -59,6 +65,9 @@ a{
     font-size: 15px;
     color: #ffff;
 }
+
+
+
 .nav-links{
     color: #ffff;
     font-weight: 500;
@@ -67,6 +76,17 @@ a{
 .nav-links:hover{
  color: blue;
 } 
+
+.icon-container {
+    margin-left: 1rem; 
+  }
+  
+.container-icons {
+    margin-left: 0.5rem; 
+    font-size: 20px;
+    color: #ffff;
+}  
+
 /* Fin de CSS navbar */ 
 
 /* Creacion de mainpage JJversion */
@@ -95,7 +115,7 @@ a{
 }
 
 .homepage-hero {
-    background-image: url(/TodoLoDeProductos/recursos/herosection.webp);
+    background-image: url(./TodoLoDeProductos/recursos/herosection.webp);
     position: relative;
     min-height: 700px;
     background-position: right;
@@ -163,7 +183,7 @@ a{
 }
 
 .homepage-featured {
-    background-image: url(/TodoLoDeProductos/recursos/feautured.png);
+    background-image: url(./TodoLoDeProductos/recursos/feautured.png);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -283,7 +303,7 @@ a{
 /* aqui */
 
 .homepage-featured-2 {
-    background-image: url(/TodoLoDeProductos/recursos/purple-glow.svg); 
+    background-image: url(./TodoLoDeProductos/recursos/purple-glow.svg); 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -344,7 +364,7 @@ a{
 /* aqui */
 
 .homepage-featured-3 {
-    background-image: url(/TodoLoDeProductos/recursos/fondo.png);
+    background-image: url(./TodoLoDeProductos/recursos/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
