@@ -13,7 +13,7 @@
       <div class="page-wrapper">
         <nav class="navbar navbar-expand-lg  fixed-top  custom-navbar" data-bs-theme="dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="../Mainpage.html"><img src="/img/LogoKantech.png" class="container-img"></a>
+            <a class="navbar-brand " href="../Mainpage.html"><img src="../img/LogoKantech.png" class="container-img"></a>
             <a href="../Mainpage.html" class="nav-logo">Kantech</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -26,32 +26,31 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 custom-MenuElements">
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="/TodoLoDeProductos/collections.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
+                      <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
                       </a>
                       <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="/TodoLoDeProductos/celulares.html">Celulares</a></li>
-                        <li><a class="dropdown-item" href="/TodoLoDeProductos/tablets.html">Tablets</a></li>
-                        <li><a class="dropdown-item" href="/TodoLoDeProductos/pc.html">Computadoras</a></li>
+                          <li><a class="dropdown-item" href="../TodoLoDeProductos/celulares.html">Celulares</a></li>
+                          <li><a class="dropdown-item" href="../TodoLoDeProductos/tablets.html">Tablets</a></li>
+                          <li><a class="dropdown-item" href="../TodoLoDeProductos/pc.html">Computadoras</a></li>
                       </ul>
-                    </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Comunidad
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                      <li><a class="dropdown-item" href="#">Proveedores</a></li>
-                      <li><a class="dropdown-item" href="#">FAQs</a></li>
-                    </ul>
                   </li>
-                </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../landing.html#about">Nosotros</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../TodoLoDeProductos/collections.html">Categorías</a>
+                  </li>
+              </ul>
+              
                 <form class="d-flex mt-3" role="search">
                   <input class="form-control me-2 container-inputsearch nav-links" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn container-buttonsearch nav-links" type="submit"> <i class="ri-search-2-line"></i></button>
                 </form>
-                <i class="ri-user-3-fill container-icons nav-links"></i>
-                <i class="ri-shopping-cart-line container-icons nav-links"></i>
+                <div class ="icon-container d-flex align-items-center">
+                  <i class="ri-user-3-fill container-icons nav-links"></i>
+                  <i class="ri-shopping-cart-line container-icons nav-links"></i>
+                </div>
               </div>
             </div>
           </div>
