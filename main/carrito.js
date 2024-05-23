@@ -116,5 +116,17 @@ const currencyRates = {
     renderCart();
     updateLocalStorage(); // Limpiar el Local Storage después de realizar la compra
   }
-  
-  
+  function checkout() {
+    if (cart.length === 0) {
+      showNotification('No se puede realizar la compra. El carrito está vacío.');
+      return;
+    }
+    alert('Compra realizada con éxito.');
+    cart = [];
+    renderCart();
+    updateLocalStorage(); // Limpiar el Local Storage después de realizar la compra
+  }
+  document.querySelector('.ri-shopping-cart-line').addEventListener('click', () => {
+    const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+    cartOffcanvas.show();
+  });
