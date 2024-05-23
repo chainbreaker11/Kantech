@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon+Milk&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon+Milk&display=swap");
 
 * {
   margin: 0;
@@ -13,17 +13,16 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #F3F3F3;
-  
+  background-color: #f3f3f3;
 }
 
-.navegation a{
+.navegation a {
   text-decoration: none;
   color: black;
 }
 
 .logo-container {
-  background-color: #FFFF;
+  background-color: #ffff;
 }
 
 .nav-container {
@@ -31,8 +30,8 @@
 }
 /*estilos para la barra de busqueda */
 .searchbar {
-  width: 100%; 
-  margin: 0 auto; 
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   background-color: white;
@@ -40,25 +39,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .searchbar input {
-  width: 100%; 
+  width: 100%;
   height: 55px;
-  border: none; 
-  background-color:rgb(223, 220, 220) ;
-  border-radius: 5px; 
-  padding: 5px 30px; 
+  border: none;
+  background-color: rgb(223, 220, 220);
+  border-radius: 5px;
+  padding: 5px 30px;
   font-size: 16px;
   color: #495057;
-
 }
-.searchbar-container{
-
+.searchbar-container {
   display: flex;
   width: 100%;
-  background-color:rgb(223, 220, 220) ;
+  background-color: rgb(223, 220, 220);
   border-radius: 5px;
 }
-
-
 
 .nav-logo {
   width: 80%;
@@ -82,7 +77,7 @@
   border-radius: 50%;
 }
 
-.btn-container{
+.btn-container {
   align-items: center;
   display: flex;
 }
@@ -98,31 +93,139 @@
   border: none;
 }
 
-.imagesearch{
-  background-color:rgb(223, 220, 220) ;
+.imagesearch {
+  background-color: rgb(223, 220, 220);
   border-radius: 5px;
   height: 40px;
   display: flex;
-  
 }
 
-.menu-desplegable{
+.menu-desplegable {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.div-correo{
+.div-correo {
   width: 300px;
   height: 40px;
   background-color: #f2f2f2;
   border-color: #ccc;
 }
 
-.div-contraseña{
+.div-contraseña {
   width: 300px;
   height: 40px;
   background-color: #fafafa;
   border-color: #ddd;
 }
 
+.linea-vertical {
+  height: 100%;
+  width: 1px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ventaja1 {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+}
+
+.ventaja2 {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+}
+
+.titulo-ventaja1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.descripcion-ventaja1 {
+  font-style: arial;
+}
+
+.titulo-ventaja2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.descripcion-ventaja2 {
+  font-style: arial;
+}
+
+.contenedor-ventaja {
+  float: right;
+}
+.gestion img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.deseos img {
+  width: 80px;
+  height: 80px;
+}
+
+  footer {
+    background-color: #000;
+  }
+  
+  .footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+
+  .footerNav {
+    margin: 30px 0;
+  }
+  .footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .footerNav ul li a:hover {
+    opacity: 1;
+  }
+
+  .footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footerBottom p {
+    color: white;
+  }
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}

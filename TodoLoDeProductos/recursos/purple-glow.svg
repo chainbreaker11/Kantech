@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2249" height="1226" viewBox="0 0 2249 1226">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8f68ff"/>
+      <stop offset="1" stop-color="#0a101d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect id="Purple_Glow" data-name="Purple Glow" width="2249" height="1226" opacity="0.2" fill="url(#radial-gradient)"/>
+</svg>

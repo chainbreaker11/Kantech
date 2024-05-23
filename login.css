@@ -1,0 +1,532 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, Ubuntu;
+  font-weight: 200;
+}
+
+.contenedor-login {
+  display: flex;
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.contenedor-informacion-ventajas {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-informacion-ventajas img {
+  height: 50px;
+  width: 50px;
+}
+
+.divisor-elementos {
+  border-right: 2px solid gray;
+}
+
+.form h2 {
+  font-weight: 500;
+
+}
+
+.form a {
+  display: flex;
+  align-self: baseline;
+  margin-left: 25px;
+  color: black;
+}
+
+.form h4 {
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  background-color: white;
+}
+
+.box {
+  padding: 12px;
+  width: 100%;
+  margin: 15px;
+  border: 2px solid gray;
+  outline: none;
+  border-radius: 5px;
+
+}
+
+.contenedor-sesion-opciones {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 12%;
+
+}
+
+#submit {
+  padding: 12px 30px;
+  width: 220px;
+  margin-top: 15px;
+  background-color: #81A4FE;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #81A4FE;
+  color: white;
+
+}
+
+#accedergoogle {
+  padding: 12px 30px;
+  width: 100%;
+  margin-top: 15px;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid gray;
+
+
+}
+
+.contenenedor-crear-cuenta {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 12%;
+}
+
+#crearcuenta {
+  padding: 12px 30px;
+  width: 220px;
+  margin-top: 10px;
+  background-color: white;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid gray;
+
+
+}
+
+.contenedor-logo {
+  display: flex;
+  position: relative;
+  left: 600px;
+  width: 260px;
+  height: 100px;
+
+
+}
+
+.ventaja1 {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+
+  padding-left: 200px;
+
+}
+
+.ventaja2 {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: none;
+  padding-left: 200px;
+}
+
+.titulo-ventaja1 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.descripcion-ventaja1 {
+  font-style: arial;
+
+}
+
+.titulo-ventaja2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.descripcion-ventaja2 {
+  font-style: arial;
+}
+
+.contenedor-ventaja {
+  float: right;
+
+}
+
+.gestion img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.deseos img {
+  width: 80px;
+  height: 80px;
+}
+
+.linea-vertical {
+
+  background-color: rgb(212, 212, 212);
+  width: 2px;
+  height: 500px;
+  margin: 0 10px;
+  margin-left: 150px;
+}
+
+.registro {
+  margin: 30px;
+}
+
+/*Nombre */
+
+
+.contenedor-nombre {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-nombre input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
+  
+}
+.contenedor-nombre input:focus,
+.contenedor-nombre input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+.contenedor-nombre label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+
+
+.contenedor-nombre:focus-within label,
+.contenedor-nombre input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background-color: black;
+  
+}
+.contenedor-nombre input:focus ~ label,
+.contenedor-nombre input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
+
+/*Correo*/
+
+
+
+.contenedor-correo {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-correo input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
+}
+.contenedor-correo input:focus,
+.contenedor-correo input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+.contenedor-correo label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-correo:focus-within label,
+.contenedor-correo input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-correo input:focus ~ label,
+.contenedor-correo input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
+/*contraseña*/
+
+
+
+.contenedor-contraseña {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-contraseña input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease;
+}
+.contenedor-contraseña input:focus,
+.contenedor-contraseña input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+.contenedor-contraseña label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-contraseña:focus-within label,
+.contenedor-contraseña input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-contraseña input:focus ~ label,
+.contenedor-contraseña input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
+
+
+/*repetir contraseña*/
+
+.contenedor-contraseña1 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-contraseña1 input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease;
+}
+
+.contenedor-contraseña1 label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+.contenedor-contraseña1 input:focus,
+.contenedor-contraseña1 input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-contraseña1:focus-within label,
+.contenedor-contraseña1 input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-contraseña1 input:focus ~ label,
+.contenedor-contraseña1 input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
+
+
+
+/* LOGIN */
+.sesion {
+  margin: 30px;
+}
+
+/* correo */
+
+.contenedor-correo2 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-correo2 input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease;
+}
+
+.contenedor-correo2 label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+.contenedor-correo2 input:focus,
+.contenedor-correo2 input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-correo2:focus-within label,
+.contenedor-correo2 input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-correo2 input:focus ~ label,
+.contenedor-correo2 input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}
+
+
+
+
+/* contraseña */
+.contenedor-contraseña3 {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contenedor-contraseña3 input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid black;
+  transition: box-shadow 0.3s ease;
+}
+
+.contenedor-contraseña3 label {
+  position: absolute;
+  top:  50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 14;
+  pointer-events: none;
+  transition: .3s;
+  color: transparent;
+}
+.contenedor-contraseña3 input:focus,
+.contenedor-contraseña3 input:valid {
+  border-color: #90C3FF; /* Cambia el color del borde a azul al hacer clic o cuando es válido */
+}
+
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+}
+.contenedor-contraseña3:focus-within label,
+.contenedor-contraseña3 input:not(:placeholder-shown) ~ label {
+  color: black; 
+}
+.contenedor-contraseña3 input:focus ~ label,
+.contenedor-contraseña3 input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+}

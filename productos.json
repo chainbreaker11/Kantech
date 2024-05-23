@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Xiaomi Celular Poco M5s Grey 8GB Ram 256GB ROM",
+      "image": "recursosProductos/celular1.jpg",
+      "price": 2499.00,
+      "category": "celulares"
+    },
+    {
+      "id": 2,
+      "name": "Xtreme PC Gamer AMD Radeon Vega Renoir Ryzen 5 5600G 16GB SSD 120GB 2TB WiFi",
+      "image": "recursosProductos/computadora1.jpg",
+      "price": 8999.00,
+      "category": "computadoras"
+    },
+    {
+      "id": 3,
+      "name": "SAMSUNG Galaxy Tab A9+ Plata 8GB RAM 128GB",
+      "image": "recursosProductos/tablet1.jpg",
+      "price": 4499.00,
+      "category": "tablets"
+    },
+    {
+      "id": 4,
+      "name": "XTREME PC GAMING Geforce RTX 3060 Intel Core I5 11400F 16GB SSD 500GB 3TB WiFi",
+      "image": "recursosProductos/computadora2.jpg",
+      "price": 19999.00,
+      "category": "computadoras"
+    },
+    {
+      "id": 5,
+      "name": "motorola Moto G13-128 GB Memoria, 4 GB RAM, Celular Desbloqueado Nacional- Rosa",
+      "image": "recursosProductos/celular2.jpg",
+      "price": 3399.00,
+      "category": "celulares"
+    },
+    {
+      "id": 6,
+      "name": "Xiaomi Celular Poco M5 Black 6GB Ram 128GB ROM",
+      "image": "recursosProductos/celular3.png",
+      "price": 1999.00,
+      "category": "celulares"
+    }
+  ]
