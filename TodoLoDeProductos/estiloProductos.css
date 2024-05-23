@@ -234,3 +234,14 @@ select.select {
     width: 100%;
   }
 }
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
