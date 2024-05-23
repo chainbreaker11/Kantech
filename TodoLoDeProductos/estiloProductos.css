@@ -101,6 +101,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 60px;
+  margin-top: 100px;
 }
 
 .product-description p {
@@ -217,6 +218,27 @@ select.select {
   background-position: right center;
   box-shadow: 0 0 10px #eee;
   color: #fff;
+}
+
+.suggestions {
+  border: 1px transparent #ddd;
+  max-height: 300px;
+  overflow-y: auto;
+  position: absolute;
+  background-color: #000; 
+  width: 445px;
+  z-index: 1000;
+  color: #fff; 
+  margin-top: 5px; 
+}
+
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions div:hover {
+  background-color: #333; 
 }
 
 @media (max-width: 650px) {
