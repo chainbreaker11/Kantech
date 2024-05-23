@@ -21,8 +21,8 @@
         "descripcion": "La tablet Samsung de 10 pulgadas con 64GB de almacenamiento es ideal para quienes buscan versatilidad y portabilidad. Con su pantalla de alta definición y tamaño compacto, ofrece una experiencia visual inmersiva y cómoda. Su almacenamiento de 64GB permite guardar una gran cantidad de aplicaciones, fotos y videos sin preocuparse por quedarse sin espacio. Es perfecta tanto para el entretenimiento como para la productividad, ofreciendo un equilibrio perfecto entre tamaño y capacidad.",
         "costos": {
           "MXN": 8000,
-          "USD": 416,
-          "EU": 384
+          "USD": 420,
+          "EU": 390
         },
         "categoria": "tablet",
         "marca": "samsung",
@@ -35,8 +35,8 @@
         "descripcion": "El Apple iPhone 15 Pro con 128GB de almacenamiento es un dispositivo móvil de última generación que combina elegancia y rendimiento. Equipado con una potente cámara triple de 12 MP, este teléfono captura fotos y videos impresionantes en cualquier situación. Su pantalla Super Retina XDR de 6.1 pulgadas ofrece colores vivos y detalles nítidos, ideal para consumir contenido multimedia y trabajar con aplicaciones exigentes. Con 128GB de almacenamiento interno, tienes espacio suficiente para guardar fotos, videos, aplicaciones y archivos sin preocuparte por el espacio. Además, cuenta con un procesador A15 Bionic, que ofrece un rendimiento rápido y fluido para todas tus necesidades diarias.",
         "costos": {
           "MXN": 25000,
-          "USD": 1300,
-          "EU": 1200
+          "USD": 1500,
+          "EU": 1400
         },
         "categoria": "celular",
         "marca": "apple",
@@ -49,8 +49,8 @@
         "descripcion": "El teclado mecánico Logitech con retroiluminación RGB es la elección ideal para aquellos que buscan tanto rendimiento como estilo. Este teclado no solo ofrece una experiencia de escritura excepcional gracias a sus interruptores mecánicos, que proporcionan una respuesta táctil precisa y duradera, sino que también cuenta con retroiluminación RGB personalizable. Esto permite ajustar la iluminación según tus preferencias, creando ambientes únicos y facilitando el uso en entornos con poca luz.",
         "costos": {
           "MXN": 2000,
-          "USD": 104,
-          "EU": 96
+          "USD": 110,
+          "EU": 100
         },
         "categoria": "periferico",
         "marca": "logitech",
