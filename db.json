@@ -192,6 +192,17 @@
       "email": "p@g",
       "password": "1",
       "checkbox": "on"
+    },
+    {
+      "id": "b113",
+      "checkbox": "on"
+    },
+    {
+      "id": "9ed0",
+      "nombre": "jesus",
+      "email": "p@g",
+      "contrasena": "123",
+      "checkbox": "on"
     }
   ]
 }

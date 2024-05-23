@@ -32,8 +32,10 @@ const postdatos = async () => {
 
 btn_registro.addEventListener('click',(event)=>{
     event.preventDefault();
-    const pass=document.getElementById('contrasena').value
-    const repass=document.getElementById('recontrasena').value
+    const pass=document.getElementById('contrasena').value;
+    const repass=document.getElementById('recontrasena').value;
+
+    console.log(pass);
     if(pass==repass&& pass.length !=0){
         postdatos();
         Swal.fire({
