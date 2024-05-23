@@ -3,11 +3,23 @@ const currencyRates = {
     usd: 0.052,
     eur: 0.048
   };
-
+  
   let cart = [];
   let currentCurrency = 'mxn';
   let itemToDelete = null;
-
+  
+  // Función para cargar el carrito desde el Local Storage al cargar la página
+  function loadCartFromLocalStorage() {
+    const cartFromStorage = localStorage.getItem('cart');
+    if (cartFromStorage) {
+      cart = JSON.parse(cartFromStorage);
+      renderCart(); // Renderizar el carrito después de cargarlo desde el almacenamiento local
+    }
+  }
+  
+  // Llama a loadCartFromLocalStorage() cuando se carga la página para cargar el carrito desde el almacenamiento local
+  document.addEventListener('DOMContentLoaded', loadCartFromLocalStorage);
+  
   function addToCart(productName, price, imageUrl) {
     console.log('Adding to cart:', productName, price, imageUrl); // Debugging line
     const existingProduct = cart.find(item => item.name === productName);
@@ -20,30 +32,37 @@ const currencyRates = {
     showNotification('Producto añadido al carrito');
     const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
     cartOffcanvas.show();
+    updateLocalStorage(); // Actualizar el Local Storage después de modificar el carrito
   }
-
+  
   function confirmDelete(productName) {
     itemToDelete = productName;
     const confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'));
     confirmModal.show();
   }
-
+  
   document.getElementById('confirmDelete').addEventListener('click', () => {
     removeFromCart(itemToDelete);
     const confirmModal = bootstrap.Modal.getInstance(document.getElementById('confirmModal'));
     confirmModal.hide();
   });
-
+  
   function removeFromCart(productName) {
     cart = cart.filter(item => item.name !== productName);
     renderCart();
+    updateLocalStorage(); // Actualizar el Local Storage después de modificar el carrito
   }
-
+  
   function emptyCart() {
     cart = [];
     renderCart();
+    updateLocalStorage(); // Actualizar el Local Storage después de modificar el carrito
   }
-
+  
+  function updateLocalStorage() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+  
   function changeCurrency() {
     currentCurrency = document.getElementById('moneda').value;
     const priceElement = document.getElementById('product-price');
@@ -53,7 +72,7 @@ const currencyRates = {
     priceElement.textContent = `${currencySymbol}${convertedPrice} ${currentCurrency.toUpperCase()}`;
     renderCart();
   }
-
+  
   function getCurrencySymbol(currency) {
     switch (currency) {
       case 'usd':
@@ -64,7 +83,7 @@ const currencyRates = {
         return '$';
     }
   }
-
+  
   function renderCart() {
     const cartItems = document.getElementById('cartItems');
     cartItems.innerHTML = '';
@@ -81,7 +100,7 @@ const currencyRates = {
       cartItems.appendChild(listItem);
     });
   }
-
+  
   function showNotification(message) {
     const notification = document.getElementById('notification');
     notification.textContent = message;
@@ -90,9 +109,12 @@ const currencyRates = {
       notification.style.display = 'none';
     }, 3000);
   }
-
+  
   function checkout() {
     alert('Compra realizada con éxito.');
     cart = [];
     renderCart();
+    updateLocalStorage(); // Limpiar el Local Storage después de realizar la compra
   }
+  
+  
