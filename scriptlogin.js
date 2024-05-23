@@ -22,7 +22,7 @@ btn_login.addEventListener("click", function (event) {
         console.log("entro en email");
         if (pasword.password == passworvalor.value) {
           console.log("entro en pasword");
-          location.href = "index.html";
+          location.href = "Mainpage.html";
         }
       } else {
       }
