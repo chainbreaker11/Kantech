@@ -108,7 +108,19 @@
         </main>
       </div>
     </div>
-    <!-- Modal de confirmación -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel">Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group" id="cartItems">
+          <!-- Aquí se agregarán los elementos del carrito -->
+        </ul>
+        <button class="btn btn-danger mt-3" onclick="emptyCart()">Vaciar Carrito</button>
+        <button class="btn btn-primary mt-3" onclick="checkout()">Comprar</button>
+      </div>
+    </div>
     <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
